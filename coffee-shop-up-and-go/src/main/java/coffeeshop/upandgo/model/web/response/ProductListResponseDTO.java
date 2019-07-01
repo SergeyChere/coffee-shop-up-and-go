@@ -1,4 +1,4 @@
-package coffeeshop.upandgo.model.web;
+package coffeeshop.upandgo.model.web.response;
 
 import lombok.*;
 
@@ -16,4 +16,9 @@ public class ProductListResponseDTO {
     private String previewImage;
     private Double price;
     private Integer inStockCount;
+
+    private String flavour;
+    private Integer rate;
+    private Boolean decaf;
+    private String coffeeType;
 }

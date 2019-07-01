@@ -1,4 +1,4 @@
-package coffeeshop.upandgo.model.entity.response;
+package coffeeshop.upandgo.model.entity;
 
 import lombok.*;
 
@@ -13,10 +13,16 @@ import javax.persistence.Id;
 @Setter
 @Entity
 @Builder
-public class ProductListResponseEtity {
+public class ProductListEntity {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
+
+    private Integer page;
+    private Integer results;
+    private String search;
+    private Integer priceMin;
+    private Integer priceMax;
 
     private String title;
     private String shortDescription;
@@ -24,4 +30,9 @@ public class ProductListResponseEtity {
     private String previewImage;
     private Double price;
     private Integer inStockCount;
+
+    private String flavour;
+    private Integer rate;
+    private Boolean decaf;
+    private String coffeeType;
 }
